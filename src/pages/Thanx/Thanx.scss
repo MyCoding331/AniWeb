@@ -1,0 +1,63 @@
+$primBlue: #0073ff;
+$white: #fff;
+$blueGray: #607d8b;
+$slate: #54617a;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@font-face {
+    font-family: 'bariolregular';
+    src: url('https://res.cloudinary.com/dw1zug8d6/raw/upload/v1541747126/fonts/bariol/bariol_regular-webfont.eot'),
+         url('https://res.cloudinary.com/dw1zug8d6/raw/upload/v1541747224/fonts/bariol/bariol_regular-webfont.woff2') format('woff2'),
+         url('https://res.cloudinary.com/dw1zug8d6/raw/upload/v1541747128/fonts/bariol/bariol_regular-webfont.woff') format('woff'),
+         url('https://res.cloudinary.com/dw1zug8d6/raw/upload/v1541747127/fonts/bariol/bariol_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$bariol: 'bariolregular';
+$roboto: 'Roboto', sans-serif;
+
+.payment-success{
+  width: 410px;
+  box-shadow: 0 13px 45px 0 rgba(51, 59, 69, 0.1);
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  font-family: $roboto;
+  position: relative;
+  background-color: white;
+  margin-top: 5rem;
+  .title{
+    font-family: $bariol;
+    font-size: 32px;
+    color: $slate;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+  .main-img{
+    width: 243px;
+  }
+  p{
+    font-size: 13px;
+    color: $blueGray;
+  }
+  
+}
+.success {
+    color: green !important;
+  
+    font-size: 80px;
+    
+    
+}
+.return {
+    color: white;
+    text-align: center;
+    margin: 3rem 0;
+    cursor: pointer;
+    button {
+        background-color: #7676ff !important;
+        padding: 1rem;
+    }
+}

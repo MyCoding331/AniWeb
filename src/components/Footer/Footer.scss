@@ -1,0 +1,139 @@
+.footer {
+  color: white;
+  border-top: 1px solid white;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  @media screen and (max-width: 800px) {
+    display: block;
+    .logo {
+      display: none;
+    }
+    .footer-notice {
+      font-size: 18px;
+      margin: 0 0.5rem !important;
+      width: 85vw !important;
+      p {
+        font-size: 15px;
+      }
+    }
+    .footer-info {
+      width: 95vw !important;
+      padding: 0 0.5rem !important;
+      .info {
+        font-size: 10px;
+      }
+      .btn-links {
+        margin-bottom: 1rem;
+        .redirect {
+          margin-right: 0.5rem;
+          h3 {
+            font-size: 15px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .logo {
+    text-decoration: none;
+    .logo-text {
+      color: white;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      margin: 0 1rem;
+      padding: 0 1rem;
+
+      .span {
+        color: #7676ff;
+      }
+    }
+  }
+  .footer-info {
+    padding: 0 2rem;
+
+    .info {
+      opacity: 0.8;
+      font-size: 15px;
+      font-weight: 300;
+    }
+    .btn-links {
+      display: flex;
+
+      align-items: center;
+      //   padding:0 4rem;
+      margin-top: 1rem;
+      .redirect {
+        text-decoration: none;
+        margin-right: 1rem;
+
+        h3 {
+          color: white;
+          font-weight: 400;
+        }
+
+        &:hover {
+          h3 {
+            color: #7676ff;
+          }
+        }
+      }
+    }
+  }
+  .footer-notice {
+    width: 50%;
+    margin-right: 3rem;
+    position: relative;
+    border: 1px solid white;
+    padding: 0.5rem;
+
+    .animate {
+      position: absolute;
+      top: -6px;
+      right: -5px;
+      display: inline-flex;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: red;
+    }
+    .animate-ping {
+      position: absolute;
+      top: -6px;
+      right: -5px;
+      display: inline-flex;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background-color: rgb(247, 49, 49);
+      animation: pulse-animation 700ms alternate ease-in-out infinite;
+      box-shadow: 0px 0px 1px 1px rgba(230, 65, 65, 0.692);
+
+      @keyframes pulse-animation {
+        0% {
+          box-shadow: 0 0 0 0px rgba(230, 65, 65, 0.473);
+        }
+        100% {
+          box-shadow: 0 0 0 6px rgba(230, 65, 65, 0.377);
+        }
+      }
+    }
+    .pulse-notice {
+      color: rgb(231, 68, 68);
+    }
+  }
+}
+
+.copyright {
+  display: block;
+  margin-left: 2rem;
+  margin-top: 1rem;
+
+  @media screen and (max-width: 800px) {
+    margin-left: 0.5rem;
+  }
+}

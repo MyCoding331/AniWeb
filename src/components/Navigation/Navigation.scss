@@ -1,0 +1,346 @@
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  
+
+ 
+}
+
+
+nav {
+  display: flex;
+  z-index: -8;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+
+  
+  
+  // margin: 0rem 5rem 0 5rem;
+  background-color: #1c1c1e;
+ 
+  padding: 1rem 0;
+  a {
+    text-decoration: none;
+    h1 {
+      color: white;
+      font-size: 2.2rem;
+      height: 1.7rem;
+      margin-left: 5rem;
+      transition: all 500ms ease-in-out;
+
+      span {
+        color: #7676ff;
+      }
+
+      @media screen and (max-width: 800px) {
+        font-size: 1.6rem;
+        margin-left: 1rem !important;
+      }
+    }
+  }
+  .menu-burger {
+    color: white;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin: 0;
+    padding: 0.6rem 0;
+    margin-right: 2rem;
+    width: 100vw;
+    img {
+      height: 1.7rem;
+      margin-left: 2rem;
+      margin-top: 1rem;
+    }
+    .nav-links {
+      display: none;
+     
+    }
+  }
+  @media screen and (min-width: 800px) {
+    .hamburger-menu {
+      display: none;
+    }
+  }
+
+  
+  
+}
+.hamburger-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background-color: #1c1c1e;
+  z-index: 100;
+  width: 50vw;
+  height: 100vh;
+  left: 0%;
+  top: 0;
+  align-items: center;
+  // border-top-right-radius: 42px !important;
+
+  transition: all 500ms ease-in-out;
+
+  @media screen and (max-width: 600px) {
+    width: 60vw;
+  }
+
+  a {
+    margin: 1.5rem 0;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    color: white;
+    animation: slide-in 600ms alternate ease-in-out;
+  }
+  .btn {
+    z-index: 20;
+    position: absolute;
+    right: 10%;
+    top: 1%;
+
+    transition: all 500ms ease-in-out;
+
+    // @media screen and (max-width: 600px) {
+    //   right: 55%;
+    // }
+    .close {
+      color: white;
+      
+
+      z-index: 200;
+      svg {
+        font-size: 28px;
+      }
+    }
+  }
+}
+.shadow {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
+}
+
+button {
+  color: white;
+  font-family: "Gilroy-Bold", sans-serif;
+  background-color: #7676ff;
+  outline: none;
+  border: none;
+  padding: 0.7rem 1.6rem 0.7rem 1.6rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+
+  svg {
+    font-size: 1rem;
+  }
+  white-space: nowrap;
+  @media screen and (max-width: 800px) {
+    padding: 0.5rem;
+    padding-right: 0;
+    background-color: transparent;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
+.nav-container {
+  display: flex;
+  justify-content: center;
+  
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 1rem;
+
+  background-color: #1c1c1e;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 0 2rem;
+  height: 75px;
+  // animation: drop 400ms alternate ease-in-out;
+  transition: all 500ms ease-in-out;
+  
+
+ 
+
+  
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+
+  a {
+    color: white;
+    font-family: "Gilroy-Medium", sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0rem 1.3rem 0 1.3rem;
+    animation: opacity 400ms alternate ease-in-out;
+
+    @keyframes opacity {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}
+.fade {
+  animation: up 400ms alternate ease-in-out;
+}
+.active {
+  // background-color: #7676ff;
+  border-bottom: 3px solid #7676ff;
+  color: #a3a3eb !important;
+  border-radius: 2px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5rem;
+  @media screen and (max-width: 800px) {
+    margin-right: 1rem;
+  }
+
+  .menu-burger {
+    margin: 0 2rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    svg {
+      width: 100%;
+      height: 100%;
+      font-size: 45px;
+    }
+  }
+}
+.donate-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.click-donate {
+  background-color: #4cbb17 !important;
+
+  display: grid;
+  place-content: center;
+  border: 2.5px solid #4cbb17;
+  color: black;
+  padding: 0.3rem 0.7rem;
+
+  &:hover {
+    opacity: 0.9;
+    color: white;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-top: 0.7rem;
+    margin-right: 1rem;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+
+    p {
+      display: flex;
+      justify-content: center;
+      margin-top: 1px;
+    }
+  }
+}
+
+
+.my-node-enter {
+  opacity: 0;
+  animation: drop 600ms alternate  ease-in-out;
+}
+.my-node-exit {
+  
+  animation: up 600ms alternate ease-in-out;
+  
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: all 600ms ease-in-out;
+}
+.my-node-exit {
+  opacity: 1;
+  transition: all 600ms ease-in-out;
+}
+
+@keyframes up {
+  from {
+    height: 75px;
+    opacity: 1;
+  }
+  to {
+    height: 0px;
+    opacity: 0;
+  }
+}
+@keyframes drop {
+  from {
+    height: 0px;
+    opacity: 0;
+  }
+  to {
+    height: 75px;
+    opacity: 1;
+  }
+}
+.my-burger-enter {
+  opacity: 0;
+  animation: slide-in 600ms alternate  ease-in-out;
+  
+}
+.my-burger-exit {
+  
+  animation: slide-out 600ms alternate ease-in-out;
+  animation-delay: 200ms;
+  
+}
+.my-burger-enter-active {
+  opacity: 1;
+  transition: all 600ms ease-in-out;
+}
+.my-burger-exit {
+  opacity: 1;
+  transition: all 600ms ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+   
+    opacity: 0;
+  }
+  to {
+    
+    opacity: 1;
+  }
+}
+@keyframes slide-out {
+  from {
+    
+    opacity: 1;
+  }
+  to {
+    
+    opacity: 0;
+  }
+}

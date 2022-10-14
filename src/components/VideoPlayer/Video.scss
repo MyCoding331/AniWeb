@@ -1,0 +1,80 @@
+.Conttainer {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #242235;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border: 1px solid #393653;
+  margin-top: 1rem;
+  border-bottom: none;
+  font-family: "Gilroy-Medium", sans-serif;
+  p {
+    color: white;
+  }
+  
+
+  button {
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.player-react {
+  width: 100vw;
+  height: 50vw;
+}
+.alert {
+  display: none;
+
+  @media (max-width:800px) {
+    display: block;
+    font-size: 12px;
+    margin: 1rem 0;
+    span {
+      color: #7676ff;
+    }
+    
+  }
+}
